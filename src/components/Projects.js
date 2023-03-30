@@ -223,6 +223,10 @@ const ProjectsContainer = styled.section`
           width: 540px;
           height: 400px;
         } */
+        img {
+          width: 100%;
+          height: 100%;
+        }
         .project-info-container {
           display: flex;
           flex-direction: column;

@@ -36,6 +36,10 @@ const NavContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  img {
+    width: 200px;
+    height: 150px;
+  }
   .icon-container {
     display: flex;
     gap: 1rem;
