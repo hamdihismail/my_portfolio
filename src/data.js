@@ -17,6 +17,7 @@ export const social = [
   {
     id: 1,
     url: 'https://github.com/hamdihismail',
+    name: 'Github',
     icon: (
       <svg xmlns='http://www.w3.org/2000/svg' width='25' height='24'>
         <path
@@ -30,6 +31,7 @@ export const social = [
   {
     id: 2,
     url: 'mailto:hamdihismail@gmail.com',
+    name: 'Email',
     icon: (
       <svg version='1.1' id='Capa_1' viewBox='0 0 490 490'>
         <g>
@@ -49,6 +51,7 @@ export const social = [
   {
     id: 3,
     url: 'https://www.linkedin.com/in/hamdi-ismail-248b0121a/',
+    name: 'Linkedin',
     icon: (
       <svg xmlns='http://www.w3.org/2000/svg' width='25' height='24'>
         <path

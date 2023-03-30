@@ -10,15 +10,19 @@ const Navbar = () => {
       <img src={logoBig} className='logo' alt='logo'></img>
       <div className='icon-container'>
         {social.map((i) => {
-          const { icon, id, url } = i;
+          const { icon, id, url, name } = i;
           return (
             <a
               className='icon'
               target='_blank'
               rel='noreferrer'
+              alt={name}
               key={id}
               href={url}
             >
+              <span className='visually-hidden'>
+                Visit my {name} (opens on new tab)
+              </span>
               {icon}
             </a>
           );

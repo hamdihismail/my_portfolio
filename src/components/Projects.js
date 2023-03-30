@@ -83,7 +83,7 @@ const Projects = () => {
                   alt={name}
                 />
                 <div className='project-info-container'>
-                  <h4 className='project-name'>{name}</h4>
+                  <h2 className='project-name'>{name}</h2>
                   <p className='project-tech'>{tech}</p>
                   <div className='view-container'>
                     <a
@@ -136,6 +136,9 @@ const ProjectsContainer = styled.section`
         line-height: 40px;
         letter-spacing: -1.13636px;
       }
+    }
+    h2 {
+      font-size: 1.25rem;
     }
   }
   .projects-container {
