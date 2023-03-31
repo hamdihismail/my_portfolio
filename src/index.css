@@ -158,8 +158,8 @@ h6 {
 /*  global classes */
 /* skip link for accessibility */
 .skip-link {
-  background: #319795;
-  color: #fff;
+  background: var(--clr-green-dark);
+  color: var(--clr-black);
   font-weight: 700;
   left: 50%;
   top: 0;
@@ -167,6 +167,7 @@ h6 {
   position: absolute;
   transform: translateY(-100%);
   transition: transform 0.3s;
+  border-radius: var(--radius);
 }
 
 .skip-link:focus {
