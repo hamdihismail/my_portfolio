@@ -1,5 +1,5 @@
-import imageLarge1 from './assets/images/retroshop_large.svg';
-import imageSmall1 from './assets/images/retroshop_small.svg';
+import imageLarge1 from './assets/images/retroshop_large.png';
+import imageSmall1 from './assets/images/retroshop_small.png';
 import imageLarge2 from './assets/images/advice_img_large.png';
 import imageSmall2 from './assets/images/advice_img_small.png';
 import imageLarge3 from './assets/images/tip_img_large.png';
