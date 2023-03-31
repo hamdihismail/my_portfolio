@@ -3,8 +3,11 @@ import Navbar from './Navbar';
 
 const Contact = () => {
   return (
-    <ContactContainer id='contact' className='section reveal '>
-      <div className='contact-container section-center  section-background'>
+    <ContactContainer className='section reveal page'>
+      <div
+        id='contact'
+        className='contact-container section-center  section-background'
+      >
         <div className='info-container'>
           <h1>Contact</h1>
           <p>
@@ -54,6 +57,7 @@ const ContactContainer = styled.section`
   /* background: var(--clr-contact-background); */
   background: transparent;
   /* padding: 81px 165px; */
+  padding-bottom: 0;
   .contact-container {
     display: flex;
     gap: 18.75%;
@@ -76,6 +80,7 @@ const ContactContainer = styled.section`
       width: 343px;
       height: 515px;
       margin-left: 0; */
+      gap: 30px;
       border-bottom: 1px solid var(--clr-border);
     }
     .info-container {
@@ -129,6 +134,7 @@ const ContactContainer = styled.section`
         width: 100%;
         /* width: 343px; */
         /* height: 327px; */
+        gap: 16px;
       }
       .form {
         /* padding: 1rem 1.5rem; */
@@ -138,6 +144,10 @@ const ContactContainer = styled.section`
         border-bottom: 1px solid #fff;
         padding-left: 24px;
         padding-bottom: 16px;
+        @media screen and (max-width: 650px) {
+          padding-left: 12px;
+          padding-bottom: 8px;
+        }
         :focus {
           outline: none;
           border-bottom: 1px solid var(--clr-green);
@@ -162,6 +172,9 @@ const ContactContainer = styled.section`
         letter-spacing: -0.222222px;
         color: var(--clr-font);
         opacity: 1.2;
+        @media screen and (max-width: 650px) {
+          height: 100px;
+        }
       }
       .send-btn {
         align-self: flex-end;
