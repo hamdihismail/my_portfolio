@@ -120,7 +120,7 @@ const ProjectsContainer = styled.section`
   header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     margin-bottom: 3rem;
     padding-right: 1.85rem;
 
