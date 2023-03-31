@@ -3,12 +3,12 @@ import Navbar from './Navbar';
 
 const Contact = () => {
   return (
-    <ContactContainer id='contact' className='section '>
-      <div className='contact-container section-center'>
+    <ContactContainer id='contact' className='section reveal '>
+      <div className='contact-container section-center  section-background'>
         <div className='info-container'>
           <h1>Contact</h1>
           <p>
-            I would love to hear about your project and how I could help. Please
+            I would love to hear about your project and how I can help. Please
             fill in the form, and I’ll get back to you as soon as possible.
           </p>
         </div>
@@ -49,12 +49,17 @@ export default Contact;
 const ContactContainer = styled.section`
   display: flex;
   flex-direction: column;
+
   /* gap: 2rem; */
-  background: var(--clr-contact-background);
+  /* background: var(--clr-contact-background); */
+  background: transparent;
   /* padding: 81px 165px; */
   .contact-container {
     display: flex;
     gap: 18.75%;
+    padding: 1rem;
+    border-top: 1px solid var(--clr-border);
+    /* overflow: hidden; */
     /* gap: 220px; */
     @media (max-width: 1180px) {
       flex-direction: column;
@@ -66,10 +71,12 @@ const ContactContainer = styled.section`
       border-bottom: none; */
     }
     @media (max-width: 650px) {
+      /* padding-right: 1rem; */
       /* top: 60px;
       width: 343px;
       height: 515px;
       margin-left: 0; */
+      border-bottom: 1px solid var(--clr-border);
     }
     .info-container {
       h1 {
@@ -119,7 +126,7 @@ const ContactContainer = styled.section`
       width: 445px;
       /* height: 327px; */
       @media (max-width: 650px) {
-        width: inherit;
+        width: 100%;
         /* width: 343px; */
         /* height: 327px; */
       }
@@ -129,6 +136,8 @@ const ContactContainer = styled.section`
         background-color: transparent;
         border: none;
         border-bottom: 1px solid #fff;
+        padding-left: 24px;
+        padding-bottom: 16px;
         :focus {
           outline: none;
           border-bottom: 1px solid var(--clr-green);
@@ -137,8 +146,7 @@ const ContactContainer = styled.section`
       input {
         /* height: 43px; */
         /* width: 443px; */
-        padding-left: 24px;
-        padding-bottom: 16px;
+
         font-weight: 500;
         font-size: 16px;
         line-height: 26px;

@@ -6,6 +6,20 @@ import imageLarge3 from './assets/images/tip_img_large.png';
 import imageSmall3 from './assets/images/tip_img_small.png';
 import imageLarge4 from './assets/images/github_img_large.png';
 import imageSmall4 from './assets/images/github_img_small.png';
+import html from './assets/images/html_icon.svg';
+import css from './assets/images/css_icon.svg';
+import js from './assets/images/js_icon.svg';
+import node from './assets/images/node_icon.svg';
+import mongodb from './assets/images/mongodb_icon.svg';
+import airtable from './assets/images/airtable_icon.svg';
+import github from './assets/images/github_icon.svg';
+import auth0 from './assets/images/auth0_icon.svg';
+import sass from './assets/images/sass_icon.svg';
+import figma from './assets/images/figma_icon.svg';
+import redux from './assets/images/redux_icon.svg';
+import vsCode from './assets/images/vsCode_icon.svg';
+import postman from './assets/images/postman_icon.svg';
+import react from './assets/images/react_icon.svg';
 // import imageLarge4 from './assets/images/thumbnail-project-4-large.webp';
 // import imageSmall4 from './assets/images/thumbnail-project-4-small.webp';
 // import imageLarge5 from './assets/images/thumbnail-project-5-large.webp';
@@ -79,57 +93,72 @@ export const skills = [
   {
     id: 1,
     skill: 'HTML',
-    years: '',
+    icon: html,
   },
   {
     id: 2,
     skill: 'CSS',
-    years: '',
+    icon: css,
   },
   {
     id: 3,
     skill: 'JavaScript',
-    years: '',
+    icon: js,
   },
   {
     id: 4,
     skill: 'React',
-    years: '',
+    icon: react,
   },
   {
     id: 5,
     skill: 'Node.js',
-    years: '',
+    icon: node,
   },
   {
     id: 6,
     skill: 'MongoDB',
-    years: '',
+    icon: mongodb,
   },
   {
     id: 7,
-    skill: 'RestAPI',
-    years: '',
+    skill: 'Redux',
+    icon: redux,
   },
   {
     id: 8,
     skill: 'GitHub',
-    years: '',
+    icon: github,
   },
   {
     id: 9,
-    skill: 'Accessibility',
-    years: '',
+    skill: 'Airtable',
+    icon: airtable,
   },
   {
     id: 10,
     skill: 'SASS / SCSS',
-    years: '',
+    icon: sass,
   },
   {
     id: 11,
-    skill: 'Responsive Design',
-    years: '',
+    skill: 'Postman',
+    icon: postman,
+  },
+  {
+    id: 12,
+    skill: 'Auth0',
+    icon: auth0,
+  },
+  {
+    id: 13,
+    skill: 'Figma',
+    icon: figma,
+  },
+  {
+    id: 14,
+    skill: 'VsCode',
+    icon: vsCode,
   },
 ];
 

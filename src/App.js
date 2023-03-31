@@ -1,20 +1,54 @@
 import './index.css';
 import circle from './assets/images/pattern-circle.svg';
 import rings from './assets/images/pattern-rings.svg';
+// import coding from './assets/images/coding1.jpg';
 import styled from 'styled-components';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+// import { useEffect } from 'react';
 
 function App() {
+  const reveal = () => {
+    const reveals = document.querySelectorAll('.reveal');
+    for (let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      const elementTop = reveals[i].getBoundingClientRect().top;
+      const elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  };
+  window.addEventListener('scroll', reveal);
+
+  reveal();
+  // function reveal() {
+  //   var reveals = document.querySelectorAll('.reveal');
+  //   for (var i = 0; i < reveals.length; i++) {
+  //     var windowHeight = window.innerHeight;
+  //     var elementTop = reveals[i].getBoundingClientRect().top;
+  //     var elementVisible = 150;
+  //     if (elementTop < windowHeight - elementVisible) {
+  //       reveals[i].classList.add('active');
+  //     } else {
+  //       reveals[i].classList.remove('active');
+  //     }
+  //   }
+  // }
+
   return (
     <Wrapper>
       <img className='rings-1' src={rings} alt='rings' />
       <img className='circle' src={circle} alt='circle' />
       <img className='rings-2' src={rings} alt='rings' />
       <img className='rings-3' src={rings} alt='rings' />
+      {/* <img className='coding' src={coding} alt='laptop' /> */}
+      <div className='coding'></div>
       <Navbar />
       <Header />
       <Skills />
@@ -28,6 +62,14 @@ function App() {
 export default App;
 const Wrapper = styled.section`
   position: relative;
+  .coding {
+    position: absolute;
+    z-index: -2;
+    opacity: 0.3;
+    /* opacity: 0.18; */
+    width: 100%;
+    height: 100%;
+  }
   .rings-1 {
     position: absolute;
     /* width: 530px;
@@ -79,6 +121,7 @@ const Wrapper = styled.section`
     /* left: 1149px;
     top: 1077px; */
     opacity: 0.5;
+    z-index: -1;
     @media (max-width: 800px) {
       left: 570px;
       top: 1047px;

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Header = () => {
   return (
-    <HeaderContainer className='header-flex section section-center'>
+    <HeaderContainer className='header-flex section section-center section-background'>
       <div className='text-container'>
         <h1 className='header-intro'>
           Nice to meet you! I’m <span className='underline'>Hamdi Ismail</span>.
@@ -11,9 +11,12 @@ const Header = () => {
           Based in Canada, I’m a software developer passionate about building
           accessible web apps that users love.
         </p>
-        <a href='#contact' className='contact'>
-          CONTACT ME
-        </a>
+        <div className='contact-container'>
+          <p className='lets-work'>Let’s Work Together !</p>
+          <a href='#contact' className='contact'>
+            CONTACT ME
+          </a>
+        </div>
       </div>
       <img className='profile-img' alt='profile' />
     </HeaderContainer>
@@ -22,9 +25,13 @@ const Header = () => {
 export default Header;
 const HeaderContainer = styled.main`
   display: flex;
+  padding-left: 1rem;
+  border-top: 1px solid var(--clr-border);
   @media screen and (max-width: 650px) {
     flex-direction: column-reverse;
     align-items: center;
+    border-bottom: 1px solid var(--clr-border);
+    padding: 1rem;
   }
   .header-flex.section.section-center {
     @media screen and (max-width: 650px) {
@@ -45,7 +52,7 @@ const HeaderContainer = styled.main`
     letter-spacing: -2.5px;
     color: var(--clr-font);
     margin-bottom: 43px;
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
       font-size: 72px;
       line-height: 72px;
       letter-spacing: -2.04545px;
@@ -53,7 +60,7 @@ const HeaderContainer = styled.main`
     }
     @media (max-width: 650px) {
       font-weight: 700;
-      font-size: 40px;
+      font-size: 35px;
       line-height: 40px;
       text-align: center;
       letter-spacing: -1.13636px;
@@ -68,8 +75,9 @@ const HeaderContainer = styled.main`
   }
   .header-text {
     max-width: 445px;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
+    /* font-size: 1.5rem; */
     line-height: 28px;
     color: var(--clr-font-body);
     margin-bottom: 66px;
@@ -94,6 +102,22 @@ const HeaderContainer = styled.main`
     @media (max-width: 800px) {
       width: 330px;
       height: 330px;
+    }
+  }
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    .lets-work {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 28px;
+      color: var(--clr-font-body);
+      @media (max-width: 650px) {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+      }
     }
   }
 `;

@@ -44,7 +44,7 @@ body {
 body {
   font-family: 'Space Grotesk', sans-serif;
   background: var(--clr-background);
-  color: var(--clr-grey-1);
+  /* color: var(--clr-grey-1); */
   line-height: 1.5;
   font-size: 0.875rem;
   overflow-x: hidden;
@@ -172,6 +172,10 @@ h6 {
 .section {
   padding: 5rem 0;
 }
+.section-background {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: var(--radius);
+}
 @media screen and (max-width: 650px) {
   .header-flex {
     padding: 0 0;
@@ -263,20 +267,23 @@ h6 {
 }
 
 .profile-img {
-  background: url('./assets/images/profile_img_desktop.png') no-repeat center
+  background: url('./assets/images/profile_img_desktop.svg') no-repeat center
     center/cover;
 }
 @media (max-width: 800px) {
   .profile-img {
-    background: url('./assets/images/profile_img_tablet.png') no-repeat center
+    background: url('./assets/images/profile_img_tablet.svg') no-repeat center
       center/cover;
   }
 }
 @media (max-width: 650px) {
   .profile-img {
-    background: url('./assets/images/profile_img_mobile.png') no-repeat center
+    background: url('./assets/images/profile_img_mobile.svg') no-repeat center
       center/cover;
   }
+}
+.coding {
+  background: url('./assets/images/coding1.jpg') no-repeat center center/cover;
 }
 /* Projects overlay */
 .hide {
@@ -315,3 +322,32 @@ h6 {
   ); /*modern browsers, clip-path works inwards from each corner*/
   white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
 }
+
+/* scroll effects to reveal elements */
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  /* transition: 1s all ease; */
+  transition: all 1s cubic-bezier(0.1, 0.7, 0.6, 0.9);
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 2s linear;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+/* .active.rotate {
+  -webkit-transform: rotateZ(-30deg);
+  -ms-transform: rotateZ(-30deg);
+  transform: rotateZ(-30deg);
+} */

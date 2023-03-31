@@ -5,7 +5,6 @@ import { projects } from '../data';
 const Projects = () => {
   const [screenSize, setScreenSize] = useState(window.screen.width);
   const showOverlay = (e) => {
-    console.log(e.currentTarget.querySelector('.overlay'), 'mouse in');
     e.currentTarget.querySelector('.overlay').classList.remove('hide');
     e.currentTarget.querySelector('.overlay').classList.add('show');
     // if (e.target.className === 'overlay hide') {
@@ -14,7 +13,6 @@ const Projects = () => {
     // }
   };
   const hideOverlay = (e) => {
-    console.log(e.currentTarget.querySelector('.overlay'), 'mouse out');
     e.currentTarget.querySelector('.overlay').classList.remove('show');
     e.currentTarget.querySelector('.overlay').classList.add('hide');
     // if (e.target.className === 'overlay show') {
@@ -34,7 +32,7 @@ const Projects = () => {
     currentScreen();
   }, [screenSize]);
   return (
-    <ProjectsContainer className='section section-center'>
+    <ProjectsContainer className='section section-center reveal section-background'>
       <header>
         <h1>Projects</h1>
         <a href='#contact' className='contact'>
@@ -54,7 +52,7 @@ const Projects = () => {
           } = singleProject;
           return (
             <div
-              className='single-project-container'
+              className='single-project-container reveal'
               key={id}
               onMouseOver={showOverlay}
               onMouseLeave={hideOverlay}
@@ -114,12 +112,18 @@ const Projects = () => {
 };
 export default Projects;
 const ProjectsContainer = styled.section`
+  padding-left: 1rem;
+  border-top: 1px solid var(--clr-border);
+  @media screen and (max-width: 650px) {
+    border-bottom: 1px solid var(--clr-border);
+  }
   header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 3rem;
     padding-right: 1.85rem;
+
     h1 {
       font-weight: 700;
       font-size: 88px;
@@ -146,18 +150,21 @@ const ProjectsContainer = styled.section`
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
     row-gap: 69px;
-    @media (max-width: 800px) {
+    @media (max-width: 1200px) {
       column-gap: 24px;
       row-gap: 60px;
+      padding-right: 1rem;
     }
     @media (max-width: 650px) {
       grid-template-columns: 1fr;
       row-gap: 40px;
+      padding-right: 1rem;
     }
     .single-project-container {
       position: relative;
       max-width: 540px;
       overflow: hidden;
+      border-radius: var(--radius);
       .overlay {
         position: absolute;
         width: 100%;
@@ -167,6 +174,7 @@ const ProjectsContainer = styled.section`
         align-items: center;
         justify-content: center;
         background-color: #000;
+        border-radius: var(--radius);
         gap: 48px;
         z-index: 10;
         transition: all 0.3s ease-in-out;
@@ -214,6 +222,7 @@ const ProjectsContainer = styled.section`
         align-items: flex-start;
         gap: 20px;
         width: inherit;
+        border-radius: var(--radius);
         /* height: inherit; */
         /* width: 540px;
         height: 487px; */
@@ -226,6 +235,8 @@ const ProjectsContainer = styled.section`
         img {
           width: 100%;
           height: 100%;
+          opacity: 0.6;
+          border-radius: var(--radius);
         }
         .project-info-container {
           display: flex;
