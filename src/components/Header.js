@@ -108,6 +108,9 @@ const HeaderContainer = styled.main`
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
+    @media screen and (max-width: 650px) {
+      align-items: center;
+    }
     .lets-work {
       font-weight: 600;
       font-size: 18px;
