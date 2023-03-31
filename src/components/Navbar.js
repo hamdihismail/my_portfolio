@@ -6,6 +6,9 @@ import logoBig from '../assets/images/HI_resized.svg';
 const Navbar = () => {
   return (
     <NavContainer className='section-center'>
+      <a class='skip-link' href='#main'>
+        Skip to content
+      </a>
       {/* <h3 className='nav-header'>hamdiIsmail</h3> */}
       <img src={logoBig} className='logo' alt='logo'></img>
       <div className='icon-container'>

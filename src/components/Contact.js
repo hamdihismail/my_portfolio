@@ -17,27 +17,22 @@ const Contact = () => {
         </div>
         <form name='contact' method='POST' data-netlify='true'>
           <input type='hidden' name='form-name' value='contact' />
-          <input
-            className='form'
-            type='text'
-            name='name'
-            placeholder='NAME'
-            // onChange={onNameChange}
-          />
+          <label htmlFor='name'></label>
+          <input className='form' type='text' name='name' placeholder='NAME' />
+          <label htmlFor='email'></label>
           <input
             className='form'
             type='email'
             name='email'
             placeholder='EMAIL'
-            // onChange={onEmailChange}
           />
+          <label htmlFor='message'></label>
           <textarea
             className='form msg'
             name='message'
             cols='30'
             rows='10'
             placeholder='MESSAGE'
-            // onChange={onMessageChange}
           ></textarea>
           <button type='submit' className='send-btn'>
             SEND MESSAGE
@@ -136,6 +131,9 @@ const ContactContainer = styled.section`
         /* height: 327px; */
         gap: 24px;
       }
+      label {
+        display: none;
+      }
       .form {
         /* padding: 1rem 1.5rem; */
         width: inherit;
@@ -197,6 +195,9 @@ const ContactContainer = styled.section`
     .logo {
       width: 175px;
       height: 100px;
+    }
+    .skip-link {
+      display: none;
     }
   }
 `;

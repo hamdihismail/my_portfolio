@@ -4,9 +4,12 @@ const Header = () => {
   return (
     <HeaderContainer className='header-flex section section-center section-background'>
       <div className='text-container'>
-        <h1 title='Hamdi’s Portfolio Website' className='header-intro'>
-          Nice to meet you! I’m <span className='underline'>Hamdi Ismail</span>.
-        </h1>
+        <header>
+          <h1 title='Hamdi’s Portfolio Website' className='header-intro'>
+            Nice to meet you! I’m{' '}
+            <span className='underline'>Hamdi Ismail</span>.
+          </h1>
+        </header>
         <p className='header-text'>
           Based in Canada, I’m a software developer passionate about building
           accessible web apps that users love.

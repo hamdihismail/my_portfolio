@@ -156,6 +156,26 @@ h6 {
   overflow-wrap: break-word;
 }
 /*  global classes */
+/* skip link for accessibility */
+.skip-link {
+  background: #319795;
+  color: #fff;
+  font-weight: 700;
+  left: 50%;
+  top: 0;
+  padding: 4px;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+
+.skip-link:focus {
+  transform: translateY(0%);
+}
+/* this is to adjust the position when scrolled to using skip-link */
+#main:target {
+  scroll-margin-top: 160px;
+}
 
 /* social icons */
 .icon-container {

@@ -32,7 +32,10 @@ const Projects = () => {
     currentScreen();
   }, [screenSize]);
   return (
-    <ProjectsContainer className='section section-center reveal section-background'>
+    <ProjectsContainer
+      id='main'
+      className='section section-center reveal section-background page'
+    >
       <header>
         <h2>Projects</h2>
         <a href='#contact' className='contact'>
@@ -65,6 +68,9 @@ const Projects = () => {
                     rel='noreferrer'
                     className='view-project'
                   >
+                    <span className='visually-hidden'>
+                      Visit my {name} (opens on new tab)
+                    </span>
                     VIEW PROJECT
                   </a>
                   <a
@@ -73,6 +79,9 @@ const Projects = () => {
                     rel='noreferrer'
                     className='view-code'
                   >
+                    <span className='visually-hidden'>
+                      Visit my {name} (opens on new tab)
+                    </span>
                     VIEW CODE
                   </a>
                 </div>
@@ -90,6 +99,9 @@ const Projects = () => {
                       rel='noreferrer'
                       className='mobile-view-project'
                     >
+                      <span className='visually-hidden'>
+                        Visit my {name} (opens on new tab)
+                      </span>
                       VIEW PROJECT
                     </a>
                     <a
@@ -98,6 +110,9 @@ const Projects = () => {
                       rel='noreferrer'
                       className='mobile-view-code'
                     >
+                      <span className='visually-hidden'>
+                        Visit my {name} (opens on new tab)
+                      </span>
                       VIEW CODE
                     </a>
                   </div>
@@ -117,6 +132,7 @@ const ProjectsContainer = styled.section`
   @media screen and (max-width: 650px) {
     border-bottom: 1px solid var(--clr-border);
   }
+
   header {
     display: flex;
     justify-content: space-between;

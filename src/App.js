@@ -30,11 +30,11 @@ function App() {
 
   return (
     <Wrapper>
-      <img className='rings-1' src={rings} alt='rings' />
-      <img className='circle' src={circle} alt='circle' />
+      <img role='presentation' className='rings-1' src={rings} alt='rings' />
+      <img role='presentation' className='circle' src={circle} alt='circle' />
       {/* <img className='rings-2' src={rings} alt='rings' /> */}
 
-      <img className='rings-3' src={rings} alt='rings' />
+      <img role='presentation' className='rings-3' src={rings} alt='rings' />
       {/* <img className='coding' src={coding} alt='laptop' /> */}
       <div className='coding'></div>
       <Navbar />
