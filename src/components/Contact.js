@@ -193,4 +193,10 @@ const ContactContainer = styled.section`
       }
     }
   }
+  nav {
+    .logo {
+      width: 175px;
+      height: 100px;
+    }
+  }
 `;
