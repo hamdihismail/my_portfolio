@@ -177,6 +177,12 @@ h6 {
   border-radius: var(--radius);
 }
 @media screen and (max-width: 650px) {
+  .section-background {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: var(--radius);
+  }
+}
+@media screen and (max-width: 650px) {
   .header-flex {
     padding: 0 0;
   }
