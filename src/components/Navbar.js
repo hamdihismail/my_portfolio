@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { social } from '../data';
-import logoBig from '../assets/images/HI_resized.png';
+import logoBig from '../assets/images/HI_resized.svg';
 // import logoSmall from '../assets/images/HI_mobile.png';
 
 const Navbar = () => {
