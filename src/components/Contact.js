@@ -80,7 +80,7 @@ const ContactContainer = styled.section`
       width: 343px;
       height: 515px;
       margin-left: 0; */
-      gap: 30px;
+      gap: 40px;
       border-bottom: 1px solid var(--clr-border);
     }
     .info-container {
@@ -134,7 +134,7 @@ const ContactContainer = styled.section`
         width: 100%;
         /* width: 343px; */
         /* height: 327px; */
-        gap: 16px;
+        gap: 24px;
       }
       .form {
         /* padding: 1rem 1.5rem; */
@@ -173,7 +173,7 @@ const ContactContainer = styled.section`
         color: var(--clr-font);
         opacity: 1.2;
         @media screen and (max-width: 650px) {
-          height: 100px;
+          height: 125px;
         }
       }
       .send-btn {
