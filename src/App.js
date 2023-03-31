@@ -27,25 +27,13 @@ function App() {
   window.addEventListener('scroll', reveal);
 
   reveal();
-  // function reveal() {
-  //   var reveals = document.querySelectorAll('.reveal');
-  //   for (var i = 0; i < reveals.length; i++) {
-  //     var windowHeight = window.innerHeight;
-  //     var elementTop = reveals[i].getBoundingClientRect().top;
-  //     var elementVisible = 150;
-  //     if (elementTop < windowHeight - elementVisible) {
-  //       reveals[i].classList.add('active');
-  //     } else {
-  //       reveals[i].classList.remove('active');
-  //     }
-  //   }
-  // }
 
   return (
     <Wrapper>
       <img className='rings-1' src={rings} alt='rings' />
       <img className='circle' src={circle} alt='circle' />
-      <img className='rings-2' src={rings} alt='rings' />
+      {/* <img className='rings-2' src={rings} alt='rings' /> */}
+
       <img className='rings-3' src={rings} alt='rings' />
       {/* <img className='coding' src={coding} alt='laptop' /> */}
       <div className='coding'></div>
@@ -112,16 +100,17 @@ const Wrapper = styled.section`
       top: 354px;
     }
   }
-  .rings-2 {
+  /* .rings-2 {
     position: absolute;
-    /* width: 530px;
-    height: 129px; */
+    width: 530px;
+    height: 129px;
     left: 79.8%;
     top: 1077px;
-    /* left: 1149px;
-    top: 1077px; */
+    left: 1149px;
+    top: 1077px;
     opacity: 0.5;
     z-index: -1;
+    overflow-x: hidden;
     @media (max-width: 800px) {
       left: 570px;
       top: 1047px;
@@ -130,7 +119,7 @@ const Wrapper = styled.section`
       left: 189px;
       top: 1287px;
     }
-  }
+  } */
   .rings-3 {
     position: absolute;
     /* width: 530px;
