@@ -39,6 +39,9 @@ const NavContainer = styled.nav`
   img {
     width: 200px;
     height: 150px;
+    @media screen and (max-width: 650px) {
+      height: 125px;
+    }
   }
   .icon-container {
     display: flex;
