@@ -34,7 +34,7 @@ const Projects = () => {
   return (
     <ProjectsContainer className='section section-center reveal section-background'>
       <header>
-        <h1>Projects</h1>
+        <h2>Projects</h2>
         <a href='#contact' className='contact'>
           CONTACT ME
         </a>
@@ -81,7 +81,7 @@ const Projects = () => {
                   alt={name}
                 />
                 <div className='project-info-container'>
-                  <h2 className='project-name'>{name}</h2>
+                  <h3 className='project-name'>{name}</h3>
                   <p className='project-tech'>{tech}</p>
                   <div className='view-container'>
                     <a
@@ -124,7 +124,7 @@ const ProjectsContainer = styled.section`
     margin-bottom: 3rem;
     padding-right: 1.85rem;
 
-    h1 {
+    h2 {
       font-weight: 700;
       font-size: 88px;
       line-height: 88px;
@@ -141,7 +141,7 @@ const ProjectsContainer = styled.section`
         letter-spacing: -1.13636px;
       }
     }
-    h2 {
+    h3 {
       font-size: 1.25rem;
     }
   }
