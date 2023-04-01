@@ -48,7 +48,7 @@ const SkillsContainer = styled.section`
     /* row-gap: 24px; */
     /* padding-top: 40px;
     padding-bottom: 40px; */
-    border-bottom: 1px solid var(--clr-border);
+    /* border-bottom: 1px solid var(--clr-border); */
   }
   h2 {
     margin-left: 1rem;

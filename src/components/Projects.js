@@ -130,7 +130,7 @@ const ProjectsContainer = styled.section`
   padding-left: 1rem;
   border-top: 1px solid var(--clr-border);
   @media screen and (max-width: 650px) {
-    border-bottom: 1px solid var(--clr-border);
+    /* border-bottom: 1px solid var(--clr-border); */
   }
 
   header {

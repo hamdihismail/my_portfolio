@@ -33,7 +33,7 @@ const HeaderContainer = styled.main`
   @media screen and (max-width: 650px) {
     flex-direction: column-reverse;
     align-items: center;
-    border-bottom: 1px solid var(--clr-border);
+    /* border-bottom: 1px solid var(--clr-border); */
     padding: 1rem;
   }
   .header-flex.section.section-center {

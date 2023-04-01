@@ -76,7 +76,7 @@ const ContactContainer = styled.section`
       height: 515px;
       margin-left: 0; */
       gap: 40px;
-      border-bottom: 1px solid var(--clr-border);
+      /* border-bottom: 1px solid var(--clr-border); */
     }
     .info-container {
       h2 {
