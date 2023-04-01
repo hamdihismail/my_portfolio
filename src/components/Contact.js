@@ -56,7 +56,7 @@ const ContactContainer = styled.section`
   .contact-container {
     display: flex;
     gap: 18.75%;
-    padding: 1rem;
+    padding: 5rem;
     border-top: 1px solid var(--clr-border);
     /* overflow: hidden; */
     /* gap: 220px; */
@@ -75,6 +75,7 @@ const ContactContainer = styled.section`
       width: 343px;
       height: 515px;
       margin-left: 0; */
+      padding: 2rem;
       gap: 40px;
       /* border-bottom: 1px solid var(--clr-border); */
     }

@@ -83,6 +83,7 @@ const Wrapper = styled.section`
     /* left: 48%; */
     /* top: 68.5%; */
     top: 521px;
+    opacity: 0.5;
     @media (max-width: 1000px) {
       left: 45%;
       /* top: 471px; */
@@ -97,7 +98,7 @@ const Wrapper = styled.section`
       left: 65%;
       /* left: 395px; */
       /* top: 46.55%; */
-      top: 354px;
+      top: 344px;
     }
   }
   /* .rings-2 {

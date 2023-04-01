@@ -39,6 +39,7 @@ const SkillsContainer = styled.section`
   }
   @media (max-width: 650px) {
     grid-template-columns: repeat(3, 1fr);
+    padding-top: 1rem;
 
     /* width: 345px;
     height: 604px; */
